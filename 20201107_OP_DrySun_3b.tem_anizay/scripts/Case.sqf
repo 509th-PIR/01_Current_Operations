@@ -1,1 +1,0 @@
-hint format ["Opening the oddly heavy case reveals four large plastic bags filled with a yellow powder, your dosimeter immediatly begins beeping angrily and you close the case"];
