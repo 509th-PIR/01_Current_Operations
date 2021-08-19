@@ -23,7 +23,7 @@ ____________________________________________*/
 
 author="509th PIR Mission Development";
 OnLoadName = "Operation Muddy Water";
-OnLoadMission = "Somewhere is Pakiraqistan, the 509th gear up to secure multiple political figureheads at the Governer's Villa";
+OnLoadMission = "Somewhere is Pakiraqistan, the 509th gear up to secure multiple political figureheads at the President's Villa";
 loadScreen = "";
 
 
