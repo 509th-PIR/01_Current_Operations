@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=656;
+		nextID=658;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=116;
+		nextID=128;
 	};
 	class Camera
 	{
-		pos[]={7525.4868,53.527115,10505.908};
-		dir[]={0.10479999,-0.5258466,0.84409851};
-		up[]={0.064789623,0.85057944,0.52183998};
-		aside[]={0.99238062,3.7252903e-009,-0.12321012};
+		pos[]={7525.0571,53.527115,10487.237};
+		dir[]={0.27627856,-0.64146054,0.71568054};
+		up[]={0.23101141,0.76715606,0.59841907};
+		aside[]={0.93290091,-1.4901161e-008,-0.36013347};
 	};
 };
 binarizationWanted=0;
@@ -897,7 +897,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=111;
+		items=113;
 		class Item0
 		{
 			dataType="Layer";
@@ -19612,6 +19612,256 @@ class Mission
 			type="mil_flag";
 			colorName="ColorWEST";
 			id=655;
+		};
+		class Item111
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7527.646,28.860001,10513.184};
+			};
+			id=656;
+			type="acre_api_basicMissionSetup";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acre_api_basicMissionSetup_DefaultRadio";
+					expression="_this setVariable ['DefaultRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ACRE_PRC117F";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acre_api_basicMissionSetup_BabelSetup";
+					expression="_this setVariable ['BabelSetup',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=2;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acre_api_basicMissionSetup_RadioSetup";
+					expression="_this setVariable ['RadioSetup',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acre_api_basicMissionSetup_DefaultRadio_Three";
+					expression="_this setVariable ['DefaultRadio_Three',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="acre_api_basicMissionSetup_DefaultRadio_Four";
+					expression="_this setVariable ['DefaultRadio_Four',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="acre_api_basicMissionSetup_DefaultRadio_Two";
+					expression="_this setVariable ['DefaultRadio_Two',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ACRE_PRC148";
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item112
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7541.0488,28.857525,10512.44};
+			};
+			init="[""ACRE_PRC148"", ""default2"", ""my_new_preset""] call acre_api_fnc_copyPreset;" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset"", 1, ""label"", ""ALPHA""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 1, ""frequencyRX"", 50.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 1, ""frequencyTX"", 50.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset"", 2, ""label"", ""BRAVO""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 2, ""frequencyRX"", 66.6] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 2, ""frequencyTX"", 66.6] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset"", 3, ""label"", ""ARMORED""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 3, ""frequencyRX"", 151.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 3, ""frequencyTX"", 151.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset"", 4, ""label"", ""MEDICAL""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 4, ""frequencyRX"", 99.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 4, ""frequencyTX"", 99.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset"", 7, ""label"", ""COMMAND""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 7, ""frequencyRX"", 30.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC148"", ""my_new_preset"", 7, ""frequencyTX"", 30.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "" \n "[""ACRE_PRC148"", ""my_new_preset""] call acre_api_fnc_setPreset;" \n "" \n "[""ACRE_PRC117F"", ""default2"", ""my_new_preset""] call acre_api_fnc_copyPreset;" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset"", 1, ""label"", ""ALPHA""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 1, ""frequencyRX"", 50.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 1, ""frequencyTX"", 50.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset"", 2, ""label"", ""BRAVO""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 2, ""frequencyRX"", 66.6] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 2, ""frequencyTX"", 66.6] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset"", 3, ""label"", ""ARMORED""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 3, ""frequencyRX"", 151.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 3, ""frequencyTX"", 151.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset"", 4, ""label"", ""MEDICAL""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 4, ""frequencyRX"", 99.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 4, ""frequencyTX"", 99.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset"", 7, ""label"", ""COMMAND""] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 7, ""frequencyRX"", 30.1] call acre_api_fnc_setPresetChannelField;" \n "[""ACRE_PRC117F"", ""my_new_preset"", 7, ""frequencyTX"", 30.1] call acre_api_fnc_setPresetChannelField;" \n "" \n "" \n "" \n "[""ACRE_PRC117F"", ""my_new_preset""] call acre_api_fnc_setPreset;";
+			id=657;
+			type="acre_api_nameChannels";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="acre_api_nameChannels_Channel_1";
+					expression="_this setVariable ['Channel_1',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ALPHA";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="acre_api_nameChannels_Channel_2";
+					expression="_this setVariable ['Channel_2',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="BRAVO";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="acre_api_nameChannels_Channel_3";
+					expression="_this setVariable ['Channel_3',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="ARMORED";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="acre_api_nameChannels_Channel_4";
+					expression="_this setVariable ['Channel_4',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="MEDICAL";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="acre_api_nameChannels_Channel_5";
+					expression="_this setVariable ['Channel_5',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="MORTAR";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="acre_api_nameChannels_SideSelect";
+					expression="_this setVariable ['SideSelect',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="acre_api_nameChannels_Channel_6";
+					expression="_this setVariable ['Channel_6',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SQUAD";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="acre_api_nameChannels_Channel_7";
+					expression="_this setVariable ['Channel_7',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="COMMAND";
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="acre_api_nameChannels_Channel_8";
+					expression="_this setVariable ['Channel_8',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="AVIATION/JTAC";
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="acre_api_nameChannels_Channel_9";
+					expression="_this setVariable ['Channel_9',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="LOGISTICS";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="acre_api_nameChannels_Channel_10";
+					expression="_this setVariable ['Channel_10',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="SUPPORT";
+						};
+					};
+				};
+				nAttributes=11;
+			};
 		};
 	};
 	class Connections
