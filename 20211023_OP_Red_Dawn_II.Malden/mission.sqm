@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1414;
+		nextID=1416;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=132;
+		nextID=172;
 	};
 	class Camera
 	{
-		pos[]={5283.8706,476.34436,12197.903};
-		dir[]={0.53606927,-0.33997706,-0.77271336};
-		up[]={0.1938003,0.94042635,-0.27935374};
-		aside[]={-0.82165653,-3.6158599e-007,-0.57002205};
+		pos[]={7499.8188,95.503525,10573.943};
+		dir[]={0.49894434,-0.75128752,-0.43199751};
+		up[]={0.56797689,0.65997493,-0.49176747};
+		aside[]={-0.65456629,1.4901161e-008,-0.75600469};
 	};
 };
 binarizationWanted=0;
@@ -80,8 +80,8 @@ addons[]=
 	"rhs_c_t72",
 	"ace_compat_rhs_afrf3",
 	"acre_api",
-	"ace_fortify",
-	"vtx_uh60"
+	"vtx_uh60",
+	"ace_fortify"
 };
 class AddonsMetaData
 {
@@ -372,15 +372,15 @@ class AddonsMetaData
 		};
 		class Item42
 		{
+			className="vtx_uh60";
+			name="vtx - UH60";
+		};
+		class Item43
+		{
 			className="ace_fortify";
 			name="ace_fortify";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
-		};
-		class Item43
-		{
-			className="vtx_uh60";
-			name="vtx - UH60";
 		};
 	};
 };
@@ -6755,7 +6755,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5455.2451,502.96848,10773.372};
-			angle=0.98865891;
+			angle=0.98865867;
 			class Attributes
 			{
 				name="spawner";
@@ -30252,72 +30252,6 @@ class Mission
 		};
 		class Item224
 		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7546.0649,28.860001,10540.8};
-			};
-			id=1411;
-			type="acex_fortify_setupModule";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_fortify_setupModule_Budget";
-					expression="_this setVariable ['Budget',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=-1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_fortify_setupModule_AddToolItem";
-					expression="_this setVariable ['AddToolItem',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_fortify_setupModule_Preset";
-					expression="_this setVariable ['Preset',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=0;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_fortify_setupModule_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=4;
-			};
-		};
-		class Item225
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -30333,7 +30267,7 @@ class Mission
 			type="vtx_UH60M";
 			atlOffset=-1.9073486e-006;
 		};
-		class Item226
+		class Item225
 		{
 			dataType="Group";
 			side="West";
@@ -30468,6 +30402,72 @@ class Mission
 			};
 			id=477;
 			atlOffset=-1.9073486e-006;
+		};
+		class Item226
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7547.1768,28.860001,10542.48};
+			};
+			id=1415;
+			type="acex_fortify_setupModule";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_fortify_setupModule_Budget";
+					expression="_this setVariable ['Budget',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=-1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ace_fortify_setupModule_AddToolItem";
+					expression="_this setVariable ['AddToolItem',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="BOOL";
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_fortify_setupModule_Preset";
+					expression="_this setVariable ['Preset',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="STRING";
+							value="big";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_fortify_setupModule_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							singleType="SCALAR";
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
 		};
 	};
 	class Connections
