@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=1416;
+		nextID=1428;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=172;
+		nextID=212;
 	};
 	class Camera
 	{
-		pos[]={7499.8188,95.503525,10573.943};
-		dir[]={0.49894434,-0.75128752,-0.43199751};
-		up[]={0.56797689,0.65997493,-0.49176747};
-		aside[]={-0.65456629,1.4901161e-008,-0.75600469};
+		pos[]={7514.2764,132.07176,10405.833};
+		dir[]={-0.66168141,-0.27782747,0.696419};
+		up[]={-0.19136843,0.96063066,0.20141482};
+		aside[]={0.72495884,6.0565071e-008,0.6887992};
 	};
 };
 binarizationWanted=0;
@@ -80,14 +80,13 @@ addons[]=
 	"rhs_c_t72",
 	"ace_compat_rhs_afrf3",
 	"acre_api",
-	"vtx_uh60",
-	"ace_fortify"
+	"vtx_uh60"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=44;
+		items=43;
 		class Item0
 		{
 			className="rhsusf_c_m1a2";
@@ -375,13 +374,6 @@ class AddonsMetaData
 			className="vtx_uh60";
 			name="vtx - UH60";
 		};
-		class Item43
-		{
-			className="ace_fortify";
-			name="ace_fortify";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
 	};
 };
 dlcs[]=
@@ -552,16 +544,8 @@ class CustomAttributes
 					singleType="ARRAY";
 					class value
 					{
-						items=3;
+						items=2;
 						class Item0
-						{
-							class data
-							{
-								singleType="STRING";
-								value="MenuInventory";
-							};
-						};
-						class Item1
 						{
 							class data
 							{
@@ -569,7 +553,7 @@ class CustomAttributes
 								value="MenuPosition";
 							};
 						};
-						class Item2
+						class Item1
 						{
 							class data
 							{
@@ -733,7 +717,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=227;
+		items=226;
 		class Item0
 		{
 			dataType="Layer";
@@ -5466,15 +5450,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={5383.7856,64.875076,11181.58};
+					position[]={6627.8413,52.790588,11064.063};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1129;
-					atlOffset=-0.00012969971;
+					id=1422;
+					atlOffset=0.0001449585;
 				};
 			};
 			class Attributes
@@ -6366,15 +6350,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={5220.4336,62.176655,11068.005};
-					type="wpAirParadrop";
-					script="\rhsusf\addons\rhsusf_c_a2port_air\scripts\WP_Para.sqf";
+					position[]={6562.6113,107.16965,10630.611};
+					type="wpParadropInfantry";
+					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1140;
-					atlOffset=3.0517578e-005;
+					id=1423;
+					atlOffset=6.1035156e-005;
 				};
 			};
 			class Attributes
@@ -6755,7 +6739,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={5455.2451,502.96848,10773.372};
-			angle=0.98865867;
+			angle=0.98865831;
 			class Attributes
 			{
 				name="spawner";
@@ -17934,44 +17918,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={6724.0391,81.031525,10786.847};
+					position[]={6463.9282,101.57211,10905.729};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1192;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ParachuteType";
-							expression="_this setWaypointScript (waypointScript _this + format [' [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ParadropDelay";
-							expression="_this setWaypointScript (waypointScript _this + format [' + [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.0049999999;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					id=1427;
+					atlOffset=-6.8664551e-005;
 				};
 			};
 			class Attributes
@@ -19298,45 +19253,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={7159.542,51.811062,10436.725};
+					position[]={6789.8096,81.634308,10671.542};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1151;
-					atlOffset=0.89294815;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ParachuteType";
-							expression="_this setWaypointScript (waypointScript _this + format [' [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ParadropDelay";
-							expression="_this setWaypointScript (waypointScript _this + format [' + [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.0049999999;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					id=1426;
+					atlOffset=0.00015258789;
 				};
 			};
 			class Attributes
@@ -20150,45 +20075,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={6708.5371,87.375923,10607.148};
+					position[]={6390.9517,120.33549,10487.888};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1165;
-					atlOffset=-7.6293945e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ParachuteType";
-							expression="_this setWaypointScript (waypointScript _this + format [' [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ParadropDelay";
-							expression="_this setWaypointScript (waypointScript _this + format [' + [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.0049999999;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					id=1424;
+					atlOffset=1.5258789e-005;
 				};
 			};
 			class Attributes
@@ -21090,45 +20985,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={6448.042,116.94622,10819.953};
+					position[]={5796.7817,113.83081,10895.504};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1177;
-					atlOffset=-7.6293945e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ParachuteType";
-							expression="_this setWaypointScript (waypointScript _this + format [' [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ParadropDelay";
-							expression="_this setWaypointScript (waypointScript _this + format [' + [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=0.0049999999;
-								};
-							};
-						};
-						nAttributes=2;
-					};
+					id=1421;
+					atlOffset=5.3405762e-005;
 				};
 			};
 			class Attributes
@@ -22030,15 +21895,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={7083.9106,39.147469,11016.561};
+					position[]={5845.502,98.904968,11027.779};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1107;
-					atlOffset=5.3405762e-005;
+					id=1419;
+					atlOffset=-1.5258789e-005;
 				};
 			};
 			class Attributes
@@ -22448,7 +22313,7 @@ class Mission
 			side="East";
 			class Entities
 			{
-				items=31;
+				items=28;
 				class Item0
 				{
 					dataType="Object";
@@ -22940,70 +22805,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={5435.1675,37.161461,11422.468};
+					position[]={5793.3521,89.501518,11066.363};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1118;
-				};
-				class Item28
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={5444.8081,38.810001,11394.559};
-					type="wpParadropInfantry";
-					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=1203;
-				};
-				class Item29
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={5503.6899,34.09877,11398.448};
-					type="wpParadropInfantry";
-					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=1204;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ParachuteType";
-							expression="_this setWaypointScript (waypointScript _this + format [' [%1]',_value]);";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="";
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item30
-				{
-					dataType="Waypoint";
-					loiterAltitude=-3.4028235e+038;
-					position[]={5502.2227,44.702156,11365.855};
-					type="wpAirParadrop";
-					script="\rhsusf\addons\rhsusf_c_a2port_air\scripts\WP_Para.sqf";
-					class Effects
-					{
-					};
-					showWP="NEVER";
-					id=1205;
+					id=1420;
+					atlOffset=-0.0001373291;
 				};
 			};
 			class Attributes
@@ -25575,15 +25385,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={5883.7139,96.076805,11050.969};
+					position[]={6786.4746,81.450241,10541.915};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1288;
-					atlOffset=-3.0517578e-005;
+					id=1425;
+					atlOffset=2.2888184e-005;
 				};
 			};
 			class Attributes
@@ -26508,15 +26318,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={7063.6411,45.284088,10811.049};
+					position[]={7091.8179,37.78344,11074.578};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1412;
-					atlOffset=-2.2888184e-005;
+					id=1417;
+					atlOffset=3.4332275e-005;
 				};
 			};
 			class Attributes
@@ -27421,15 +27231,15 @@ class Mission
 				{
 					dataType="Waypoint";
 					loiterAltitude=-3.4028235e+038;
-					position[]={6925.498,64.76413,10712.005};
+					position[]={6940.8892,39.939465,11118.803};
 					type="wpParadropInfantry";
 					script="\rhsafrf\addons\rhs_c_air\scripts\WP_ParaInf.sqf";
 					class Effects
 					{
 					};
 					showWP="NEVER";
-					id=1413;
-					atlOffset=3.8146973e-005;
+					id=1418;
+					atlOffset=-0.00012207031;
 				};
 			};
 			class Attributes
@@ -30402,72 +30212,6 @@ class Mission
 			};
 			id=477;
 			atlOffset=-1.9073486e-006;
-		};
-		class Item226
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={7547.1768,28.860001,10542.48};
-			};
-			id=1415;
-			type="acex_fortify_setupModule";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_fortify_setupModule_Budget";
-					expression="_this setVariable ['Budget',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=-1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_fortify_setupModule_AddToolItem";
-					expression="_this setVariable ['AddToolItem',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_fortify_setupModule_Preset";
-					expression="_this setVariable ['Preset',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="big";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_fortify_setupModule_Side";
-					expression="_this setVariable ['Side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							singleType="SCALAR";
-							value=1;
-						};
-					};
-				};
-				nAttributes=4;
-			};
 		};
 	};
 	class Connections

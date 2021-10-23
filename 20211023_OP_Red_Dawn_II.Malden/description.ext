@@ -49,10 +49,6 @@ class CfgFunctions
 	#include "KPCF\KPCF_functions.hpp"	
 };
 
-class CfgDebriefing{  
-  #include "Unit\Anti_cheat\anti_cheat.hpp"  
-};
-
 
 
 
