@@ -1,0 +1,130 @@
+#include "CHVD\dialog.hpp" // View Distance
+#include "KPGUI\KPGUI_defines.hpp"
+#include "KPCF\ui\KPCF_dialog.hpp"
+
+/*
+File: description.ext
+Author:
+
+	Michael
+
+Last modified:
+
+	20210509  by Michael
+	
+Description:
+
+	https://community.bistudio.com/wiki/Description.ext
+____________________________________________*/
+
+
+
+
+author="Exile's Failing Sanity";
+OnLoadName = "Halloween 2021";
+OnLoadMission = "Ya'll gunna die!";
+loadScreen = "";
+
+
+
+
+
+
+class CfgFunctions
+{
+	#include "vcom\cfgFunctions.hpp"
+	#include "CHVD\CfgFunctions.hpp"
+	#include "KPCF\KPCF_functions.hpp"	
+};
+
+class CfgDebriefing{  
+  #include "Unit\Anti_cheat\anti_cheat.hpp"  
+};
+
+
+class CfgSounds
+{
+	sounds[] = {};
+	class Radio1
+	{
+		name = "Radio1";
+		sound[] = {"\Sounds\RussianRadio1.ogg", 10, 1, 20};
+		titles[] = {0,""};
+		};
+	class Radio2
+	{
+		name = "Radio2";
+		sound[] = { "\Sounds\RussianRadio2.ogg", 10, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio3
+	{
+		name = "Radio3";
+		sound[] = { "\Sounds\RussianRadio3.ogg", 10, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio4
+	{
+		name = "Radio4";
+		sound[] = { "\Sounds\RussianRadio4.ogg", 20, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio5
+	{
+		name = "Radio5";
+		sound[] = { "\Sounds\RussianRadio5.ogg", 20, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio6
+	{
+		name = "Radio6";
+		sound[] = { "\Sounds\RussianRadio6.ogg", 20, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio7
+	{
+		name = "Radio7";
+		sound[] = { "\Sounds\RussianRadio7.ogg", 20, 1, 20 };
+		titles[] = {0,""};
+		};
+	class Radio8
+	{
+		name = "Radio8";
+		sound[] = { "\Sounds\RussianRadio8.ogg", 20, 1, 20 };
+		titles[] = {0,""};
+		};	
+	class Lullaby
+	{
+		name = "Lullaby";
+		sound[] = { "\Sounds\CreepyLullaby.ogg", 20, 1, 300 };
+		titles[] = {0,""};
+		};
+	class Cursed
+	{
+		name = "Curse";
+		sound[] = { "\Sounds\RussianCursed.ogg", 20, 1, 300 };
+		titles[] = {0,""};
+		};
+};
+class CfgRemoteExec
+{
+	// List of script functions allowed to be sent from client via remoteExec
+	class Functions
+	{
+		mode = 2;
+		jip = 1;		
+		
+		class vcm_serverask { allowedTargets = 0;jip = 1; };
+		class VCM_PublicScript { allowedTargets = 0;jip = 1; };
+		class BIS_fnc_debugConsoleExec { allowedTargets = 0;jip = 1; };
+		class SpawnScript { allowedTargets = 0;jip = 1; };
+		class enableSimulationGlobal { allowedTargets = 0;jip = 1; };
+		class VCM_fnc_KnowAbout { allowedTargets = 0;jip = 1; };
+		
+	};
+};
+
+//////////////////// Vcom CBA settings ////////////////////////////////
+class Extended_PreInit_EventHandlers {
+	VCM_CBASettings = call compile preprocessFileLineNumbers "Vcom\Functions\VCM_Functions\fn_CBASettings.sqf";
+};
